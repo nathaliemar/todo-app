@@ -165,3 +165,10 @@ footer {
   color: white;
   text-decoration: underline;
 }
+
+/* CONTENT */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
