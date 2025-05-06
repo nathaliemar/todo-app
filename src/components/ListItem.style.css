@@ -1,0 +1,19 @@
+.card {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  outline: 1px black solid;
+}
+
+.button-box {
+  display: flex;
+  gap: 10px;
+  padding: var(--spacing-sm);
+}
+
+.delete-btn {
+  background-color: var(--color-gray);
+  color: var(--color-dark-pink);
+}

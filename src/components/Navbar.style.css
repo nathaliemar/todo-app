@@ -1,0 +1,25 @@
+/*NAV BAR*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100vw;
+  background-color: var(--color-light-pink);
+  overflow: hidden;
+}
+.hero-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  height: 50px;
+}
