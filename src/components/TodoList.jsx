@@ -1,19 +1,11 @@
 import "./TodoList.style.css";
-import tasksData from "../assets/tasks.json";
-import { useState } from "react";
 import ListItem from "./ListItem";
-import { Link } from "react-router-dom";
 
-function TodoList() {
-  const [todos, setTodos] = useState(tasksData);
-  const deleteTodo = (taskName) => {
-    setTodos(todos.filter((todo) => todo.task !== taskName));
-  };
-
+function TodoList(props) {
   return (
     <div className="list-container">
-      {todos.map((todo, index) => (
-        <ListItem key={index} todo={todo} deleteTodo={deleteTodo} />
+      {props.todos.map((todo, index) => (
+        <ListItem key={todo.id} todo={todo} deleteTodo={props.deleteTodo} />
       ))}
     </div>
   );

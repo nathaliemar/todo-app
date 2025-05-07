@@ -1,12 +1,11 @@
 import "./ItemDetails.style.css";
 import { useParams } from "react-router-dom";
-import tasksData from "../assets/tasks.json";
 import "./ItemDetails.style.css";
 
 // filter
-export function ItemDetails() {
+export function ItemDetails({ todos, setTodos }) {
   const { todoId } = useParams();
-  const foundTodo = tasksData.find((todo) => todo.id === Number(todoId));
+  const foundTodo = todos.find((todo) => todo.id === Number(todoId));
   console.log(foundTodo);
   return (
     <div className="content">
