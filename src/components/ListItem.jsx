@@ -5,7 +5,11 @@ function ListItem({ todo, deleteTodo }) {
   return (
     <div className="card">
       <p className="task-name">
-        {todo.completed ? <span>✔ </span> : <span>❌ </span>}
+        {todo.completed ? (
+          <span className="completed-symbol">✔</span>
+        ) : (
+          <span className="completed-symbol">❌</span>
+        )}
         {todo.task}
       </p>
       <div className="button-box">

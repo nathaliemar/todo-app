@@ -17,3 +17,7 @@
   background-color: var(--color-gray);
   color: var(--color-dark-pink);
 }
+
+.completed-symbol {
+  padding: 0 5px;
+}

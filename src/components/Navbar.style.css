@@ -3,13 +3,13 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  width: 100vw;
+  width: 100%;
+  z-index: 1000;
   background-color: var(--color-light-pink);
   overflow: hidden;
 }
