@@ -1,0 +1,26 @@
+.content {
+  display: flex;
+}
+.about-container {
+  text-align: left;
+  max-width: 90vw;
+}
+
+.about-container p {
+  line-height: 2em;
+}
+
+.about-container h1,
+h2 {
+  padding: var(--spacing-sm) 0;
+}
+hr {
+  border: 1px solid var(--color-secondary);
+  margin: var(--spacing-sm);
+}
+.thank-you {
+  text-align: center;
+}
+.thank-you span {
+  font-style: italic;
+}

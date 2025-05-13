@@ -1,3 +1,4 @@
-.todo {
-  color: red;
+.item-details-page {
+  display: flex;
+  flex-direction: row;
 }

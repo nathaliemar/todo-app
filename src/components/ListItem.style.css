@@ -4,7 +4,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  outline: 1px black solid;
+  outline: 2px var(--color-mid-pink) solid;
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: var(--shadow-md);
 }
 
 .button-box {

@@ -18,7 +18,7 @@ export function ItemDetails({ todos, setTodos }) {
   };
 
   return (
-    <div className="content">
+    <div className="content item-details-page">
       <TodoDetails foundTodo={foundTodo} />
       <TodoForm
         mode="edit"

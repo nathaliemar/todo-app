@@ -12,6 +12,7 @@ nav {
   z-index: 1000;
   background-color: var(--color-light-pink);
   overflow: hidden;
+  padding: 10px;
 }
 .hero-box {
   display: flex;

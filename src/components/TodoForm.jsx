@@ -120,16 +120,23 @@ export function TodoForm({ mode = "add", todo = {}, onSubmit }) {
   return (
     <div className="todo-form-container">
       <h4 className="todo-form-title">
-        {mode === "add" ? "Add a new todo" : "Edit todo"}
+        {mode === "add" ? "Add a new todo" : "Edit this todo"}
       </h4>
       <form className="todo-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Title</label>
-          <input type="text" value={task} onChange={handleTaskInput} required />
+          <input
+            className="form-input"
+            type="text"
+            value={task}
+            onChange={handleTaskInput}
+            required
+          />
         </div>
         <div className="form-group">
           <label>Details</label>
-          <input
+          <textarea
+            className="form-textarea"
             type="text"
             value={details}
             onChange={handleDetailsInput}
@@ -139,12 +146,13 @@ export function TodoForm({ mode = "add", todo = {}, onSubmit }) {
         <div className="form-group checkbox">
           <label>Completed?</label>
           <input
+            className="form-checkbox"
             type="checkbox"
             checked={completed}
             onChange={handleCompletedInput}
           />
         </div>
-        <button type="submit">
+        <button type="submit" className="form-submit-btn">
           {mode === "add" ? "Add Todo" : "Save Changes"}
         </button>
       </form>
